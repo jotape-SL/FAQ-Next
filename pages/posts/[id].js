@@ -72,11 +72,11 @@ export default function PostByIdScreen(props) {
       <Text
         variant="heading2"
         tag="h1"
-        styleSheet={{ color: '#F9703E', justifyContent: 'center', lineHeight: '1.2' }}
+        styleSheet={{ color: '#d60909', justifyContent: 'center', lineHeight: '1.2' }}
       >
         {post.title}
       </Text>
-      <Text styleSheet={{ color: '#F9703E', justifyContent: 'center', borderBottom: '1px solid #F9703E', paddingVertical: '16px', marginVertical: '16px' }}>
+      <Text styleSheet={{ color: '#d60909', justifyContent: 'center', borderBottom: '1px solid #d60909', paddingVertical: '16px', marginVertical: '16px' }}>
         {post.date}
       </Text>
 
@@ -99,12 +99,13 @@ export default function PostByIdScreen(props) {
         styleSheet={{
           marginTop: '16px',
           paddingVertical: '16px',
-          borderTop: '1px solid #F9703E',
-          color: '#F9703E',
+          borderTop: '1px solid #d60909',
+          color: '#d60909',
         }}
       >
         <NextLink href="/" passHref>
-          <Text tag="a" styleSheet={{ hover: { textDecoration: 'underline' } }}>
+          <Text tag="a" styleSheet={{ hover: { textDecoration: 'underline' },
+         }}>
             Voltar para a home
           </Text>
         </NextLink>
