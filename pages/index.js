@@ -4,8 +4,7 @@ import dados from '../dados.json';
 
 export default function HomeScreen() {
   const infos = {
-    nome: 'Mario Souto',
-    githubUser: 'omariosouto',
+    nome: 'Peter Parker',
   }
   const posts = dados.posts;
 
@@ -19,19 +18,20 @@ export default function HomeScreen() {
       }}
     >
       <Image
-        src={`https://github.com/${infos.githubUser}.png`}
+        src={`https://br.atsit.in/wp-content/uploads/2021/12/o-homem-aranha-peter-parker-morre-no-no-way-home.jpg`}
         styleSheet={{
           width: '150px',
           height: '150px',
           borderRadius: '50%',
           margin: '0 auto',
-          border: '2px solid #F9703E',
+          border: '2px solid #0008fa',
+          objectFit:'cover'
         }}
       />
       <Text
         variant="heading1"
         tag="h1"
-        styleSheet={{ color: '#F9703E', justifyContent: 'center' }}
+        styleSheet={{ color: '#f73434', justifyContent: 'center' }}
       >
         {infos.nome}
       </Text>
@@ -55,13 +55,14 @@ function Post({ title, content, id }) {
     <Box 
       styleSheet={{
         flexDirection: 'column',
-        border: '1px solid #F9703E',
+        border: '1px solid #0008fa',
         padding: '16px',
         boxShadow: '1px 1px 5px 0 rgba(255,69,0,0.2)',
         transition: '.3s',
         borderRadius: '4px',
         hover: {
-          boxShadow: '1px 1px 5px 5px rgba(255,69,0,0.2)',
+          boxShadow: '1px 1px 5px 5px rgba(0,8,250,0.2)',
+          cursor:"pointer"
         }
       }}
     >
@@ -69,7 +70,7 @@ function Post({ title, content, id }) {
         <Text
           tag="a"
           variant="heading4"
-          styleSheet={{ display:' block', color: '#F9703E', marginBottom: '8px' }}
+          styleSheet={{ display:' block', color: '#f73434', marginBottom: '8px' }}
         >
           {title}
         </Text>

@@ -12,13 +12,13 @@ export async function getStaticPaths() {
   // ]
   const paths = dados.posts.map((postAtual) => {
     return { params: { id: `${postAtual.id}` } };
-  })
+  });
   console.log('dados:', dados);
   console.log('paths:', paths);
 
   return {
     paths: paths,
-    fallback: false // false or 'blocking'
+    fallback: false, // false or 'blocking'
   };
 }
 
@@ -27,11 +27,11 @@ export async function getStaticProps(context) {
   const id = context.params.id;
 
   const post = dados.posts.find((currentPost) => {
-    if(currentPost.id === id) {
+    if (currentPost.id === id) {
       return true;
     }
     return false;
-  })
+  });
 
   console.log(post);
 
@@ -41,8 +41,8 @@ export async function getStaticProps(context) {
       title: post.title,
       date: post.date,
       content: post.content,
-    }, 
-  }
+    },
+  };
 }
 
 export default function PostByIdScreen(props) {
@@ -55,7 +55,7 @@ export default function PostByIdScreen(props) {
     content: props.content,
   };
 
-  if(router.isFallback) {
+  if (router.isFallback) {
     return 'Essa página não existe!';
   }
 
@@ -70,14 +70,26 @@ export default function PostByIdScreen(props) {
     >
       {/* Cabeçalho */}
       <Text
-        variant="heading2"
-        tag="h1"
-        styleSheet={{ color: '#F9703E', justifyContent: 'center', lineHeight: '1.2' }}
+        variant='heading2'
+        tag='h1'
+        styleSheet={{
+          color: '#d60909',
+          justifyContent: 'center',
+          lineHeight: '1.2',
+        }}
       >
         {post.title}
       </Text>
-      <Text styleSheet={{ color: '#F9703E', justifyContent: 'center', borderBottom: '1px solid #F9703E', paddingVertical: '16px', marginVertical: '16px' }}>
-        {post.date}
+      <Text
+        styleSheet={{
+          color: '#d60909',
+          justifyContent: 'center',
+          borderBottom: '1px solid #d60909',
+          paddingVertical: '16px',
+          marginVertical: '16px',
+        }}
+      >
+        Lançamento oficial no Brasil: {post.date}
       </Text>
 
       {/* Área de Conteudo */}
@@ -86,29 +98,37 @@ export default function PostByIdScreen(props) {
           flexDirection: 'column',
         }}
       >
-        <Text>
-          {post.content}
-        </Text>
+        <Text>{post.content}</Text>
 
-        {post.video && <iframe style={{ marginTop: '32px', minHeight: '400px' }} src={post.video} /> }
+        {post.video && (
+          <iframe
+            style={{ marginTop: '32px', minHeight: '400px' }}
+            src={post.video}
+          />
+        )}
       </Box>
-
 
       {/* Rodapé */}
       <Box
         styleSheet={{
           marginTop: '16px',
           paddingVertical: '16px',
-          borderTop: '1px solid #F9703E',
-          color: '#F9703E',
+          borderTop: '1px solid #d60909',
+          color: '#d60909',
         }}
       >
-        <NextLink href="/" passHref>
-          <Text tag="a" styleSheet={{ hover: { textDecoration: 'underline' } }}>
+        <NextLink href='/' passHref>
+          <Text
+            tag='a'
+            styleSheet={{
+              hover: { textDecoration: 'underline' },
+              cursor: 'pointer',
+            }}
+          >
             Voltar para a home
           </Text>
         </NextLink>
       </Box>
     </Box>
-  )
+  );
 }
