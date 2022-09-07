@@ -41,6 +41,7 @@ export async function getStaticProps(context) {
       title: post.title,
       date: post.date,
       content: post.content,
+      video: post.video,
     },
   };
 }
@@ -53,6 +54,7 @@ export default function PostByIdScreen(props) {
     title: props.title,
     date: props.date,
     content: props.content,
+    video: props.video,
   };
 
   if (router.isFallback) {
@@ -100,12 +102,15 @@ export default function PostByIdScreen(props) {
       >
         <Text>{post.content}</Text>
 
-        {post.video && (
-          <iframe
-            style={{ marginTop: '32px', minHeight: '400px' }}
-            src={post.video}
-          />
-        )}
+        <iframe
+          margin-top='32px'
+          height='400px'
+          src={post.video}
+          title='SPIDER-MAN: INTO THE SPIDER-VERSE - Official Trailer #2 (HD)'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen
+        ></iframe>
       </Box>
 
       {/* Rodapé */}
