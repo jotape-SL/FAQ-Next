@@ -2,28 +2,28 @@
   "posts": [
     {
       "id": "1",
-      "video": "https://www.youtube.com/watch?v=tg52up16eq0&ab_channel=SonyPicturesEntertainment",
+      "video": "https://www.youtube.com/embed/tg52up16eq0",
       "title": "Spider-Man: Into the Spider-Verse (2018)",
       "content": "Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.",
       "date": "10/01/2019"
     },
     {
       "id": "2",
-      "video": "https://www.youtube.com/watch?v=JfVOs4VSpmA&ab_channel=SonyPicturesEntertainment",
+      "video": "https://www.youtube.com/embed/JfVOs4VSpmA",
       "title": "Spider-Man: No Way Home (2021)",
       "content": "Com a identidade do Homem-Aranha agora revelada, nosso simpático lançador de teias da vizinhança é desmascarado e não é mais capaz de separar sua vida normal como Peter Parker dos altos riscos de ser um super-herói. Quando Peter pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.",
       "date": "16/12/2021"
     },
     {
       "id": "3",
-      "video": "https://www.youtube.com/watch?v=t06RUxPbp_c&ab_channel=SonyPicturesEntertainment",
+      "video": "https://www.youtube.com/embed/t06RUxPbp_c",
       "title": "Spider-Man Movie (2002)",
       "content": "Depois de ser picado por uma aranha geneticamente modificada em uma demonstração científica, o jovem nerd Peter Parker ganha superpoderes.Inicialmente, ele pretende usá-los para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém, ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes para proveito próprio e sim para enfrentar o mal.",
       "date": "17/05/2002"
     },
     {
       "id": "4",
-      "video": "https://www.youtube.com/watch?v=-tnxzJ0SSOw&ab_channel=SonyPicturesEntertainment",
+      "video": "https://www.youtube.com/embed/-tnxzJ0SSOw",
       "title": "The Amazing Spider-Man",
       "content": "O Espetacular Homem-Aranha segue a história de origem dos primórdios de Peter Parker como o escalador de paredes. Depois de ser mordido por uma aranha radioativa, Peter adquire habilidades incríveis que o ajudarão a alcançar coisas com as quais só poderia sonhar. Em uma luta com cativante pela cidade, Peter se esforçará para proteger a cidade de Nova York da ameaça de seu amigo que virou inimigo, Doutor Curt Connors, que se transformou no Lagarto. ",
       "date": "06/07/2012"

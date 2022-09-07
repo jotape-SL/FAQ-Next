@@ -4,7 +4,7 @@ import dados from '../dados.json';
 
 export default function HomeScreen() {
   const infos = {
-    nome: 'Peter Parker',
+    nome: 'Homem-Aranaha',
   };
   const posts = dados.posts;
 
